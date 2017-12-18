@@ -3,19 +3,19 @@
   <div class="ui-title">{{ user.title }}</div>
   <ul class="ui-menu">
     <li class="ui-menu-item">
-      <a routerLink="/resume" fragment="about">{{ 'about' | translate}}</a>
+      <a (click)="onClick('about')">{{ 'about' | translate}}</a>
     </li>
     <li class="ui-menu-item">
-      <a routerLink="/resume" fragment="skills">{{ 'skills' | translate}}</a>
+      <a (click)="onClick('skills')">{{ 'skills' | translate}}</a>
     </li>
     <li class="ui-menu-item">
-      <a routerLink="/resume" fragment="experience">{{ 'experience' | translate}}</a>
+      <a (click)="onClick('experience')">{{ 'experience' | translate}}</a>
     </li>
     <li class="ui-menu-item">
-      <a routerLink="/resume" fragment="education" href="#">{{ 'education' | translate}}</a>
+      <a (click)="onClick('education')">{{ 'education' | translate}}</a>
     </li>
     <li class="ui-menu-item">
-      <a routerLink="/resume" fragment="hobby">{{ 'hobby' | translate}}</a>
+      <a (click)="onClick('hobby')">{{ 'hobby' | translate}}</a>
     </li>
   </ul>
 </div>

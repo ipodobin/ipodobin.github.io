@@ -19,12 +19,12 @@ export class ResumeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // subscribe to route/fragment
-    this.route.fragment.subscribe(fragment => {
-      try {
-        document.querySelector('#' + fragment).scrollIntoView();
-      } catch (e) { }
-    });
+    // // subscribe to route/fragment
+    // this.route.fragment.subscribe(fragment => {
+    //   try {
+    //     document.querySelector('#' + fragment).scrollIntoView({'behavior': 'smooth'});
+    //   } catch (e) { }
+    // });
 
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translate.setDefaultLang('en');

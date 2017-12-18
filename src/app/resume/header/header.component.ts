@@ -11,11 +11,17 @@ import { User } from '../shared/user.model';
 export class HeaderComponent implements OnInit {
 
   user: User;
-  
+
   constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.user = this.userService.getUser();
+  }
+
+  onClick(id: string) {
+    document.querySelector('#' + id).scrollIntoView({
+      'behavior': 'smooth'
+    });
   }
 
 }
