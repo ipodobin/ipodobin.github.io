@@ -8,7 +8,7 @@
       <div>{{ 'birth' | translate }}</div>
       <div>{{ user.birthDate | date:'dd MMMM yyyy' }}</div>
       <div>{{ 'webpage' | translate }}</div>
-      <div><a [href]="user.webpage">{{ user.webpage }}</a></div>
+      <div><a target="_blank" [attr.href]="user.webpage ? user.webpage : null">{{ user.webpage }}</a></div>
       <div>{{ 'phone' | translate }}</div>
       <div>{{ user.phone }}</div>
       <div>{{ 'email' | translate }}</div>
